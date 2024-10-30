@@ -1,0 +1,1148 @@
+@font-face {
+    font-family: myfont ;
+    src: url(./CooperLtBTWXXLight.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: myfont;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+.section1{
+    height: 100%;
+    width: 100%;
+}
+/* nav */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2.5vw;
+    width: 100%;
+    background-color: white;
+    z-index: 10; 
+}
+/* nav-left */
+.nav .nav-left h1{
+    font-weight: 600;
+    font-size: 1.6vw;
+}
+.nav .nav-left span{
+    color: #40F0AB;
+}
+/* nav-right */
+.nav .nav-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav .nav-right a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9vw;
+    padding: 0 1.3vw;
+    border-bottom: 3px transparent;
+    transition: border-bottom 0.4s ease;
+}
+.nav .nav-right a:hover{
+    border-bottom: 3px solid #00EB8F;
+    transition: border-bottom 0.2s ease;
+}
+/* nav-drop start */
+.nav .nav-right #drop span{  
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9vw;
+    padding: 0 1.3vw;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 1vw;
+}
+.nav .nav-right #drop-down{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 20vw;
+    top: 4vw;
+    padding: 1vw 51vw;
+    justify-content: center;
+    width: 100%;
+    left: -180%;
+    border-top: 1px solid rgba(34, 34, 34, 0.74);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease, opacity 0.9s ease;
+    z-index: 3;
+    background-color: white;
+}
+.nav .nav-right #drop-down #drop1 h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    line-height: 2.2vw;
+    width: 11vw;
+    font-weight: lighter;
+}
+/* nav last child */
+.nav .nav-right a:nth-last-child(1){
+    padding: 0.4vw 1.5vw;
+    border-radius: 10vw;
+    border: 0.1px solid rgb(58, 57, 57);
+    position: relative; 
+    overflow: hidden;    
+}
+
+.nav .nav-right a:nth-last-child(1) #green{
+    position: absolute;
+    background-color: #00EB8F;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    border-radius: 10vw;
+    transition: left 0.4s ease;  
+}
+.nav .nav-right a:nth-last-child(1):hover #green{
+    left: 0;
+}
+.nav .nav-right a:nth-last-child(1) h1{
+    font-size: 0.9vw;
+    position: relative;
+    z-index: 2;
+    font-weight: lighter;
+}
+/* section2 */
+.section2{
+    height: 100%;
+    width: 100%;
+}
+/* center-text */
+.center-text h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 13vw;
+    font-size: 5.5vw;
+    font-weight: lighter;
+    z-index: 5;
+    pointer-events: none;
+    color: black;
+}
+.center-text h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 5.5vw;
+    font-weight: lighter;
+}
+.center-text h2::after{
+    content: '';
+    position: absolute;
+    background-image:url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    object-fit: cover;
+    top: 6vw;
+    right: 38vw;
+    height: 1vw;
+    width: 23vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* center-text2 */
+.section2 .center-text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    height: 100%;
+    width: 100%;
+    padding-top: 3vw;
+}
+.center-text2 h3{
+    position: relative;
+    top: 0;
+    font-size: 1.3vw;
+    font-weight: bold;
+    display: inline;
+}
+/* center-text2 ka button */
+.center-text2 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    height: 2vw;
+    right: 0;
+    width: 4vw;
+    cursor: pointer;
+    border-radius: 10vw;
+    overflow: hidden;
+    border: 1px solid rgba(148, 148, 148, 0.726);
+}
+
+.center-text2 button img{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.section2 .center-text2 button #green {
+    position: absolute;
+    background-color:#00EB8F;
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    left: -100%;
+    transition: 0.3s ease;
+}
+.section2 .center-text2 button:hover #green{
+    left: 0;
+}
+/* section2 ki image */
+.section2 .img1{
+    height: 37vw;
+    width: 25vw;
+    position: absolute;
+    top: 9vw;
+    left: 7vw;
+    bottom: 0;
+}
+.section2 .img1 img:hover{
+    margin-top: -10px;
+}
+.section2 .img1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+.section2 .img2{
+    height: 11vw;
+    width: 13vw;
+    position: absolute;
+    top: 7vw;
+    left: 65vw;
+    bottom: 0;
+}
+.section2 .img2 img {
+    height: 100%;
+    width: 100%;
+    transition: 0.4s ease;  
+}
+.section2 .img2 img:hover{
+    margin-top: -10px;
+}
+.section2 .img3{
+    height: 17vw;
+    width: 17vw;
+    position: absolute;
+    top: 28vw;
+    left: 72vw;
+    bottom: 0;
+}
+.section2 .img3 img {
+    height: 100%;
+    width: 100%;  
+    transition: 0.4s ease;
+}
+.section2 .img3 img:hover{
+    margin-top: -10px;
+}
+/* section3 */
+.section3{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin-top: 15vw;
+}
+.section3 .top .combine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4vw;
+    
+}
+
+.section3 .top .combine h1{
+    color: #40F0AB;
+    font-weight: bolder;
+    padding: 0 0;
+    display: list-item;
+}
+.section3 .top .combine p{
+    color: #fcfcfc;
+    font-size: 1.2vw;
+    
+}
+.section3 .top h1{
+    font-size: 2.3vw;
+    text-align: center;
+    padding: 2vw 29vw;
+    color: white;
+    font-weight: lighter;
+    position: relative;
+}
+.section3 .top span::after{
+    content: '';
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    height: 4vw;
+    width: 10vw;
+    top: 56%;
+    right: 46%;
+    object-fit: cover;
+}
+.section3 .top .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4vw;
+}
+.section3 .top .end h3{
+    position: relative;
+    top: 0;
+    font-size: 1.3vw;
+    font-weight: 700;
+    display: inline;
+    color: white;
+    border: none;
+}
+.section3 .top .end button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    height: 2vw;
+    right: 0;
+    width: 4vw;
+    cursor: pointer;
+    border-radius: 10vw;
+    overflow: hidden;
+    border: 1px solid rgba(148, 148, 148, 0.726);
+}
+
+.section3 .top .end button img{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.section3 .top .end button #green {
+    position: absolute;
+    background-color:#00EB8F;
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    left: -100%;
+    transition: 0.3s ease;
+}
+.section3 .top .end button:hover #green{
+    left: 0;
+}
+/* section4 */
+.section4{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .image{
+    display: flex;
+    gap: 2vw;
+}
+.section4 .image .image-left .image1{
+    height: 30vw;
+    width: 11vw;
+}
+.section4 .image .image-left .image1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section4 .image .image-left .image2{
+    height: 15vw;
+    width: 10vw;
+    margin: 2vw 0;
+}
+.section4 .image .image-left .image2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section4 .image .image-right .image3{
+    height: 15vw;
+    width: 25vw;
+}
+.section4 .image .image-right .image3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section4 .image .image-right .image4{
+    height: 34vw;
+    margin-top: 1.8vw;
+    width: 32vw;
+}
+.section4 .image .image-right .image4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* section4 */
+.section4 .text-right {
+    color: black;
+}
+.section4 .text-right .text h1{
+    color: black;
+    font-size: 3vw;
+    line-height: 4vw;
+    padding: 0 13vw;
+    font-weight: lighter;
+    position: relative;
+}
+.section4 .text-right .text p{
+    color: black;
+    font-size: 1vw;
+    margin: 2vw 0;
+    line-height: 2vw;
+    padding: 0 13vw;
+    font-weight: lighter;
+}
+.section4 .text-right .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.section4 .text-right .end h3{
+    position: relative;
+    top: 0;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    display: inline;
+    color: rgb(0, 0, 0);
+}
+.section4 .text-right .text h1 span::after{
+    content: '';
+    position: absolute;
+    background-image:url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    object-fit: cover;
+    top: 43%;
+    right: 44%;
+    height: 1vw;
+    width: 11vw;
+}
+
+.section4 .text-right .end button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    gap: 1vw;
+    cursor: pointer;
+    border-radius: 10vw;
+    overflow: hidden;
+    padding: 0 0.8vw;
+    border: 1px solid gray;
+
+}
+.section4 .text-right .end button h1{
+    font-size: 0.8vw;
+    font-weight:lighter ;
+    z-index: 99;
+}
+.section4 .text-right .end button img{
+    height: 2vw;
+    width: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.section4 .text-right .end button #green {
+    position: absolute;
+    background-color:#00EB8F;
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    left: -100%;
+    transition: 0.3s ease;
+}
+.section4 .text-right .end button:hover #green{
+    left: 0;
+}
+/* section5 */
+.section5{
+    height: 100%;
+    width: 100%;
+}
+.section5 .top-text h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3vw;
+    padding: 0 25vw;
+    margin: 5vw 0;
+    position: relative;
+}
+.section5 .top-text span::after{
+    content: '';
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    height: 5vw;
+    width: 9vw;
+    top: -9%;
+    right: 56%;
+    object-fit: cover;
+}
+.section5 .bottom-image{
+    padding: 0 21vw;
+}
+
+.section5 .bottom-image .clm1{
+    width: 7vw;
+    gap: 5vw;
+    display: flex;
+    padding: 2.5vw 0;
+}
+.section5 .bottom-image .clm1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+.section5 .bottom-image .clm2{
+    width: 7vw;
+    gap: 10vw;
+    display: flex;
+    margin: 2vw 24vw;
+}
+.section5 .bottom-image .clm2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+/* section6 */
+.section6{
+    height: 100%;
+    width: 100%;
+    padding: 10vw 15vw;
+    position: relative;
+}
+.section6 .main-container{
+    display: flex;
+    gap: 1vw;
+}
+/* container */
+.section6 .container1{
+  
+    position: relative;
+    overflow: hidden;
+}
+
+/* shade */
+.section6 .shade{
+    /* background-color: rgba(10, 10, 10, 0.39); */
+    background: linear-gradient(to top, #000000, #ffffff00);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    pointer-events: none;
+    
+}
+.section6 .container1 .image2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+/* container image1 */
+.section6 .container1 .image1{
+    position: absolute;
+    top: 5%;
+    right: 63%;
+    height: 3vw;
+    width: 11vw;
+}
+.section6 .container1 .image1 img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    pointer-events: none
+}
+.section6 .container1 .image2 {
+   height: 25vw;
+   width: 32vw;
+   position: relative;  
+   cursor: pointer;
+  
+}
+.section6 .container1 .image2 img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 0.5s ease;
+ }
+.section6 .container1 .image2 img:hover{ 
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+/* container1 h1 */
+.section6 .container1 h1{
+    position: absolute;
+    top: 46%;
+    font-size: 2.2vw;
+    width: 22vw;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    left: 5%;
+    z-index: 2;
+    pointer-events: none;
+}
+/* button wala part */
+.section6 .center-text2 h3{
+    position: absolute;
+    top: 83%;
+    color: white;
+    font-size: 1.4vw;
+    font-weight: lighter;
+    left: 5%;
+    z-index: 2;
+    pointer-events: none;
+}
+.section6 .center-text2 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 83%;
+    height: 2vw;
+    right: 48%;
+    width: 4vw;
+    cursor: pointer;
+    border-radius: 10vw;
+    overflow: hidden;
+    padding: 0 0.8vw;
+    background-color: rgb(73, 72, 72);
+    border: 1px solid rgb(253, 253, 253);
+    z-index: 1;
+}
+
+.section6 .center-text2 button img{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    
+}
+.section6 .center-text2 button #green {
+    position: absolute;
+    background-color:#00EB8F;
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    left: -100%;
+    transition: 0.3s ease;
+}
+.section6 .center-text2 button:hover #green{
+    left: 0;
+}
+
+/* container2 */
+
+.section6 .container2{
+    height: 25vw;
+    width: 32vw;
+    position: relative;
+    overflow: hidden;
+}
+.section6 .container2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section6 .container2 .image2{
+    position: absolute;
+    top: 5%;
+    right: 63%;
+    height: 3vw;
+    width: 11vw;
+    z-index: 2;
+    pointer-events: none;
+}
+.section6 .container2 .image2 img{
+    height: 100%;
+    width: 100%;
+}
+.section6 .container2 h1{
+    position: absolute;
+    top: 58%;
+    font-size: 2.2vw;
+    width: 25vw;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    left: 5%;
+    z-index: 2;
+    pointer-events: none;
+}
+.section6 .container2 .image3 {
+    height: 25vw;
+    width: 32vw;
+    position: relative;  
+    cursor: pointer;
+   
+ }
+ .section6 .container2 .image3 img {
+     height: 100%;
+     width: 100%;
+     position: relative;
+     transition: transform 0.5s ease;
+  }
+ .section6 .container2 .image3 img:hover{ 
+     transform: scale(1.1);
+     transition: transform 0.5s ease;
+ }
+/* button wala part */
+.section6 .container3 .center-text2 h3{
+    position: relative;
+    top: 0;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    display: inline;
+    color: rgb(0, 0, 0);
+}
+.section6 .center-text2 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 83%;
+    height: 2vw;
+    right: 48%;
+    width: 4vw;
+    cursor: pointer;
+    border-radius: 10vw;
+    overflow: hidden;
+    padding: 0 0.8vw;
+    background-color: gray;
+    border: 1px solid rgb(253, 253, 253);
+}
+
+.section6 .center-text2 button img{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    
+}
+.section6 .center-text2 button #green {
+    position: absolute;
+    background-color:#00EB8F;
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    left: -100%;
+    transition: 0.3s ease;
+}
+.section6 .center-text2 button:hover #green{
+    left: 0;
+}
+/* container3 button */
+.section6 .container3{
+   margin-top: 2vw;
+}
+.section6 .container3 .center-text2 {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+}
+.section6 .container3 .center-text2  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    gap: 2vw;
+    cursor: pointer;
+    border-radius: 10vw;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 0 4vw;
+    border: 1px solid rgba(128, 128, 128, 0.582);
+}
+.section6 .container3 .center-text2 h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.4vw;
+    font-weight: lighter;  
+    pointer-events: none;
+}
+.section6 .container3 .center-text2  button h1{
+    font-size: 0.8vw;
+    font-weight:lighter ;
+    z-index: 99;
+}
+.section6 .container3 .center-text2  button img{
+    height: 100%;
+    position: relative;
+    z-index: 9;
+}
+.section6 .container3 .center-text2 button #green {
+    position: absolute;
+    background-color:#00EB8F;
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    left: -100%;
+    transition: 0.3s ease;
+}
+.section6 .container3 .center-text2  button:hover #green{
+    left: 0;
+}
+
+/* section7 */
+
+.section7{
+    height: 100%;
+    width: 100%;
+    
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /* img1 */
+
+  .swiper-slide .img1{
+    height: 3vw;
+  }
+
+  .swiper-slide .img1 img {
+    height: 100%;
+  }
+
+  /* img2 */
+ 
+  .swiper-slide h1 {
+    font-size: 3vw;
+    font-weight: lighter;
+    text-align: center;
+    padding: 3vw 24vw;
+  }
+  .swiper-slide span {
+    font-size: 3vw;
+    color: #00EB8F;
+  }
+  .swiper-slide h4 {
+    font-size: 1vw;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .swiper-slide p {
+    font-size: 1vw;
+    font-weight: lighter;
+    text-align: center;
+    color: gray;
+    margin-bottom: 4vw;
+  }
+
+  /* img2 */
+  .swiper-slide .img2{
+    height: 1vw;
+    
+  }
+  .swiper-slide .img2 img{
+    height: 100%;
+  }
+
+   /* img3 */
+   .swiper-slide .img3{
+    height: 3vw;
+    
+  }
+  .swiper-slide .img3 img{
+    height: 100%;
+  }
+
+  /* img4 */
+  .swiper-slide .img4{
+    height: 1.5vw;
+    
+  }
+  .swiper-slide .img4 img{
+    height: 100%;
+  }
+  
+  /* img5 */
+
+  .swiper-slide .img5{
+    height: 4vw;
+    
+  }
+  .swiper-slide .img5 img{
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+
+  /* section8 */
+  .section8{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 10vw;
+    
+  }
+  .section8 .container{
+    height: 20vw;
+    width: 65%;
+}
+  .section8 .image{
+    height: 20vw;
+    width: 65%;
+    position: absolute;
+    top: -6%;
+    right: 18%;
+  }
+  .section8 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .section8 .text h1{
+    color: white;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 25vw;
+    font-size: 1.5vw;
+    font-weight: lighter;
+  }
+  .section8 .text h1 span{
+    position: relative;
+  }
+  .section8 .text h1 span::after{
+    content: '';
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    height: 0.5vw;
+    width: 5vw;
+    top: 90%;
+    right: -6%;
+    position: absolute;
+    object-fit: cover;
+  } 
+  .section8 .shades{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    z-index: 10;
+  }
+ .section8 .end {
+     display: flex;
+     align-items: center;
+     gap: 2vw;
+     justify-content: center;
+     margin-top: 2vw;
+ }
+ .section8 .end  button{
+    display: flex;
+    align-items: center;
+     position: relative;
+     gap: 1vw;
+     cursor: pointer;
+     border-radius: 10vw;
+     overflow: hidden;
+     background-color: transparent;
+     padding: 0 1vw;
+     border: 1px solid rgba(255, 255, 255, 0.582);
+     z-index: 10;
+ }
+ .section8 .end h3{
+     color: rgb(255, 255, 255);
+     font-size: 1.4vw;
+     font-weight: lighter;  
+     pointer-events: none;
+     position: relative;
+     z-index: 10;
+ }
+ .section8 .end button h1{
+     font-size: 0.8vw;
+     font-weight:lighter ;
+     z-index: 10;
+     text-align: center;
+     color: white;
+ }
+ .section8 .end button img{
+     height: 2vw;
+     width: 2vw;
+     position: relative;
+     z-index: 9;
+ }
+ .section8 .end button #green {
+     position: absolute;
+     background-color:#00EB8F;
+     width: 100%;
+     height: 100%;
+     border-radius: 10vw;
+     left: -100%;
+     transition: 0.3s ease;
+ }
+ .section8 .end  button:hover #green{
+     left: 0;
+ }
+ /* section8 bottom */
+ .section8 .main-bottom{
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+ }
+ .section8 .bottom{
+    display: flex;
+    gap: 7vw;
+    margin: 3vw 0;
+ }
+ .section8 .main-bottom .bottom .first{
+    width: 35%;
+ }
+ .section8 .main-bottom .bottom .first h1{
+    color: white;
+    margin-left: 17vw;
+    font-size: 2.3vw;
+    font-weight: lighter;
+    margin-top: 12vw;
+ }
+ .section8 .main-bottom .bottom .first span{
+    position: relative;
+ }
+ .section8 .main-bottom .bottom .first span::after{
+    content: '';
+    position: absolute;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    height: 4vw;
+    width: 9vw;
+    top: -20%;
+    right: -9%;
+    object-fit: cover;
+}
+.section8 .main-bottom .bottom .seconed h1{
+    color: white;
+    margin-top: 12vw;
+    font-size: 1.3vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    line-height: 1vw;  
+}
+.section8 .main-bottom .bottom .seconed h2{
+    color: white;
+    font-size: 1vw;
+    font-weight: lighter;
+    line-height: 2vw;
+}
+.section8 .main-bottom .bottom .fourth h1{
+    color: white;
+    margin-top: 12vw;
+    font-size: 1.3vw;
+    display: inline-block;
+    margin-bottom: 1vw;
+    line-height: 1vw;
+    
+}
+.section8 .main-bottom .bottom .fourth h2{
+    color: white;
+    font-size: 1vw;
+    font-weight: lighter;
+    line-height: 1.5vw;
+}
+.section8 .main-bottom .bottom .fifth{
+    gap: 2vw;
+    margin-right: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section8 .main-bottom .bottom .fifth .img1{
+    height: 3vw;
+    margin-top: 12vw;
+    
+}
+.section8 .main-bottom .bottom .fifth .img1 img{
+    height: 100%;
+    object-fit: cover;
+}
+.section8 .main-bottom .bottom .fifth .img2{
+    height: 5.5vw;
+    
+}
+.section8 .main-bottom .bottom .fifth .img2 img{
+    height: 100%;
+    object-fit: cover;
+}
+.section8 .main-bottom .bottom .fifth .img3{
+    height: 2vw; 
+}
+.section8 .main-bottom .bottom .fifth .img3 img{
+    height: 100%;
+    object-fit: cover;
+}
+.section8 .main-bottom .footer{
+    border-top: 1px solid gray;
+    margin: 0 20vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+.section8 .main-bottom .footer h1{
+    margin: 2vw 0;
+    font-size: 1.2vw;
+    font-weight: lighter;
+}
+.section8 .main-bottom .footer p{
+    margin: 2vw 0;
+    font-size: 0.8vw;
+}
+.section8 .main-bottom .footer span{
+    margin: 2vw 0;
+    font-size: 0.7vw;
+}
